@@ -1,0 +1,24 @@
+name: Trigger Sentinel
+description: Trigger a Plural Sentinel and optionally wait for it to finish
+
+inputs:
+  url:
+    description: the url of your Plural Console instance
+    required: true
+  token:
+    description: the token to use to authenticate with Plural Console
+    required: true
+  sentinel:
+    description: the name of the sentinel to trigger
+    required: true
+  wait:
+    description: whether to wait for the sentinel to finish
+    required: false
+    default: 'false'
+  waitDurationSeconds:
+    description: the maximum duration to wait for the sentinel to finish
+    required: false
+    default: '600'
+runs:
+  using: node20
+  main: index.js

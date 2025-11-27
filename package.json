@@ -1,0 +1,23 @@
+{
+  "name": "trigger-pull-request",
+  "version": "1.0.0",
+  "description": "Github Action to call a Plural PR Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pluralsh/trigger-pull-request.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pluralsh/trigger-pull-request/issues"
+  },
+  "homepage": "https://github.com/pluralsh/trigger-pull-request#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  }
+}

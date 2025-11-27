@@ -39,7 +39,7 @@ wait:
 
 For this to be possible you need to have configured the following:
 
-1. Federated credential to allow `someone@example.com` to exchange a GH actions token for a temporary Plural token.  This token should have at least the scope `createPipelineContext`.
+1. Federated credential to allow `someone@example.com` to exchange a GH actions token for a temporary Plural token.  This token should have at least the scope `sentinel.write`.
 2. A write binding on the `test-sentinel` Sentinel to allow `someone@exmaple.com` to invoke it.  This is not permissible by default unless that user is an admin.
 3. The `test-sentinel` sentinel itself.  You can learn more at https://docs.plural.sh/plural-features/plural-ai/sentinels
 

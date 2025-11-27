@@ -109,7 +109,7 @@ async function pollSentinelRun(token, url, id, startTime, maxDuration=10 * 60 * 
         core.info(`Failed to poll sentinel run: ${error}`);
     }
 
-    setTimeout(() => pollSentinelRun(id, startTime, maxDuration), 2000); // poll every 2 seconds
+    setTimeout(() => pollSentinelRun(token, urlid, startTime, maxDuration), 2000); // poll every 2 seconds
 }
 
 main();
